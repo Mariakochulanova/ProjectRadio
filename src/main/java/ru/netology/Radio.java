@@ -72,9 +72,6 @@ public class Radio {
         if (currentFmStation + 1 > lastFmStation) {
             currentFmStation = firstFmStation;
         }
-            if (currentFmStation == lastFmStation) {
-            currentFmStation = lastFmStation;
-        }
         return currentFmStation;
     }
 
