@@ -13,55 +13,55 @@ public class Radio {
         return firstFmStation;
     }
 
-    public int setFirstFmStation(int firstFmStation) {
-        this.firstFmStation = 0;
-        return firstFmStation;
+    public void setFirstFmStation(int firstFmStation) {
+        this.firstFmStation = firstFmStation;
+        return;
     }
 
     public int getLastFmStation() {
         return lastFmStation;
     }
 
-    public int setLastFmStation(int lastFmStation) {
+    public void setLastFmStation(int lastFmStation) {
         this.lastFmStation = 9;
-        return lastFmStation;
+        return;
     }
 
     public int getCurrentFmStation() {
         return currentFmStation;
     }
 
-    public int setCurrentFmStation(int currentFmStation) {
+    public void setCurrentFmStation(int currentFmStation) {
         this.currentFmStation = currentFmStation;
-        return currentFmStation;
+        return;
     }
 
     public int getMinVolume() {
         return minVolume;
     }
 
-    public int setMinVolume(int minVolume) {
-        this.minVolume = 0;
-        return minVolume;
+    public void setMinVolume(int minVolume) {
+        this.minVolume = minVolume;
+        return;
     }
 
     public int getMaxVolume() {
         return maxVolume;
     }
 
-    public int setMaxVolume(int maxVolume) {
-        this.maxVolume = 10;
-        return maxVolume;
+    public void setMaxVolume(int maxVolume) {
+        this.maxVolume = maxVolume;
+        return;
     }
 
     public int getCurrentVolume() {
         return currentVolume;
     }
 
-    public int setCurrentVolume(int currentVolume) {
+    public void setCurrentVolume(int currentVolume) {
         this.currentVolume = currentVolume;
 
-        return currentVolume;
+        return;
     }
 
     public int nextFmStation() {
