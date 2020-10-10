@@ -29,7 +29,7 @@ class RadioTest {
     @Test
     void prevFmStation() {
         Radio radio = new Radio();
-        radio.setCurrentFmStation(8);
+        radio.setCurrentFmStation(2);
         radio.setFirstFmStation(0);
         int expected = radio.getCurrentFmStation() - 1;
         assertEquals(expected, radio.prevFmStation());
