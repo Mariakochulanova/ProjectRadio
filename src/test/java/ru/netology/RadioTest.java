@@ -51,7 +51,7 @@ class RadioTest {
     @Test
     void increaseVolume() {
         Radio radio = new Radio();
-        radio.setCurrentVolume(4);
+        radio.setCurrentVolume(9);
         radio.setMaxVolume(10);
         int expected = radio.getCurrentVolume() + 1;
         assertEquals(expected, radio.increaseVolume());

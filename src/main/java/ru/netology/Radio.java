@@ -68,8 +68,7 @@ public class Radio {
 
         if (currentFmStation < lastFmStation) {
             currentFmStation = currentFmStation + 1;
-        }
-        if (currentFmStation + 1 > lastFmStation) {
+        } else {
             currentFmStation = firstFmStation;
         }
         return currentFmStation;
@@ -79,8 +78,7 @@ public class Radio {
 
         if (currentFmStation > firstFmStation) {
             currentFmStation = currentFmStation - 1;
-        }
-        if (currentFmStation - 1 < firstFmStation) {
+        } else {
             currentFmStation = lastFmStation;
         }
         return currentFmStation;
@@ -90,8 +88,7 @@ public class Radio {
 
         if (currentVolume < maxVolume) {
             currentVolume = currentVolume + 1;
-        }
-        if (currentVolume + 1 > maxVolume) {
+        } else {
             currentVolume = maxVolume;
         }
         return currentVolume;
@@ -101,8 +98,7 @@ public class Radio {
 
         if (currentVolume > minVolume) {
             currentVolume = currentVolume - 1;
-        }
-        if (currentVolume - 1 < minVolume) {
+        } else {
             currentVolume = minVolume;
         }
         return currentVolume;
