@@ -1,30 +1,33 @@
 package ru.netology;
 
 public class Radio {
-    private int firstFmStation;
-    private int lastFmStation;
+    private int id = 1;
+    private int firstFmStation = 0;
+    private int lastFmStation = 9;
     private int currentFmStation;
-    private int minVolume;
-    private int maxVolume;
+    private int minVolume = 0;
+    private int maxVolume = 100;
     private int currentVolume;
     private boolean on;
+
+
+    public Radio(int firstFmStation, int lastFmStation) {
+        this.firstFmStation = firstFmStation;
+        this.lastFmStation = lastFmStation;
+    }
+    public Radio (int minVolume, int maxVolume, int currentVolume) {
+        this.minVolume = minVolume;
+        this.maxVolume = maxVolume;
+        this.currentVolume = currentVolume;
+    }
 
     public int getFirstFmStation() {
         return firstFmStation;
     }
 
-    public void setFirstFmStation(int firstFmStation) {
-        this.firstFmStation = firstFmStation;
-        return;
-    }
 
     public int getLastFmStation() {
         return lastFmStation;
-    }
-
-    public void setLastFmStation(int lastFmStation) {
-        this.lastFmStation = 9;
-        return;
     }
 
     public int getCurrentFmStation() {
@@ -40,18 +43,8 @@ public class Radio {
         return minVolume;
     }
 
-    public void setMinVolume(int minVolume) {
-        this.minVolume = minVolume;
-        return;
-    }
-
     public int getMaxVolume() {
         return maxVolume;
-    }
-
-    public void setMaxVolume(int maxVolume) {
-        this.maxVolume = maxVolume;
-        return;
     }
 
     public int getCurrentVolume() {
@@ -60,8 +53,6 @@ public class Radio {
 
     public void setCurrentVolume(int currentVolume) {
         this.currentVolume = currentVolume;
-
-        return;
     }
 
     public int nextFmStation() {
