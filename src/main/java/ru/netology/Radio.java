@@ -1,8 +1,11 @@
 package ru.netology;
 
 import lombok.AllArgsConstructor;
+import lombok.Data;
 
 @AllArgsConstructor
+@Data
+
 
 public class Radio {
     private int id = 1;
@@ -14,21 +17,6 @@ public class Radio {
     private int currentVolume;
     private boolean on;
 
-    public int getCurrentFmStation() {
-        return currentFmStation;
-    }
-
-    public void setCurrentFmStation(int currentFmStation) {
-        this.currentFmStation = currentFmStation;
-    }
-
-    public boolean isOn() {
-        return on;
-    }
-
-    public void setOn(boolean on) {
-        this.on = on;
-    }
 
     public int nextFmStation() {
 
